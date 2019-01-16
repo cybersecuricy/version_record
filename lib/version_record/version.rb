@@ -17,7 +17,7 @@ module VersionRecord
     end
 
     def bump(segment = :minor)
-      send("bump_#{segment}") if [:major, :minor, :patch].include?(segment)
+      send("bump_#{segment}") if %w{ major minor patch }.include?(segment.to_s)
       self
     end
 
