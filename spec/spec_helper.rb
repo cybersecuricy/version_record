@@ -8,6 +8,8 @@ if Rails.version.start_with?('5.0')
   require 'support/apps/rails5_0'
 elsif Rails.version.start_with?('5.1')
   require 'support/apps/rails5_1'
+elsif Rails.version.start_with?('5.2')
+  require 'support/apps/rails5_2'
 end
 require 'support/model_spawner'
 require 'version_record'
